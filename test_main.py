@@ -1,5 +1,5 @@
-import main
+from main import main
 
 
-def test_main():
-    assert main.main([1, 2, 3]) == 3
+def test_main():  # type: ignore
+    assert main([1, 2, 3]) == 3
