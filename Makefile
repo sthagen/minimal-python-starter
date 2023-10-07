@@ -44,12 +44,10 @@ clean:
 	rm -f `find . -type f -name '*.py[co]' `
 	rm -f `find . -type f -name '*~' `
 	rm -f `find . -type f -name '.*~' `
-	rm -rf .cache
-	rm -rf htmlcov
-	rm -rf *.egg-info
-	rm -f .coverage
-	rm -f .coverage.*
-	rm -rf build
+	rm -rf .cache build htmlcov *.egg-info
+	@rm -rf .benchmarks .hypothesis .*_cache
+	@rm -f .coverage .coverage.* *.log .DS_Store
+
 
 .PHONY: name
 name:
